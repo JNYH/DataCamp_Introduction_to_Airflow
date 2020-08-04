@@ -19,7 +19,7 @@ airflow run dag task 2020-01-08
 
 airflow run etl_pipeline task 2020-01-08
 
-airflow run etl_pipeline download_file 2020-01-08 <answer>
+airflow run etl_pipeline download_file 2020-01-08 (Answer)
 
 
 ### Examining Airflow commands
@@ -29,7 +29,7 @@ Which of the following is NOT an Airflow sub-command? Possible Answers
 
 list_dags
 
-edit_dag <answer>
+edit_dag (Answer)
 
 test
 
@@ -98,8 +98,47 @@ default_args = {
 dag = DAG( dag_id='refresh_data', default_args=default_args )
 
 
+### Airflow web interface
+
+### Starting the Airflow webserver
+You've successfully created some DAGs within Airflow using the command-line tools, but notice that it can be a bit tricky to handle scheduling / troubleshooting / etc. After reading the documentation further, you realize that you'd like to access the Airflow web interface. For security reasons, you'd like to start the webserver on port 9090.
+
+Which airflow command would you use to start the webserver on port 9090?
+
+Remember to use the airflow -h command if needed. airflow subcommand -h will provide further detail.
+
+> airflow webserver -p 9090
 
 
+### Navigating the Airflow UI
+To gain some familiarity with the Airflow UI, you decide to explore the various pages. You'd like to know what has happened on your Airflow instance thus far.
+
+Which of the following events have not run on your Airflow instance? Possible Answers
+
+cli_scheduler
+
+cli_webserver
+
+cli_worker (Answer)
+
+
+### Examining DAGs with the Airflow UI
+You've become familiar with the basics of an Airflow DAG and the basics of interacting with Airflow on the command-line. Your boss would like you to show others on your team how to examine any available DAGs. In this instance, she would like to know which operator is NOT in use with the DAG called update_state, as your team is trying to verify the components used in production workflows.
+
+Remember that the Airflow UI allows various methods to view the state of DAGs. The Tree View lists the tasks and any ordering between them in a tree structure, with the ability to compress / expand the nodes. The Graph View shows any tasks and their dependencies in a graph structure, along with the ability to access further details about task runs. The Code view provides full access to the Python code that makes up the DAG.
+
+Remember to select the operator NOT used in this DAG. Possible Answers
+
+BashOperator
+
+PythonOperator
+
+JdbcOperator (Answer)
+
+SimpleHttpOperator
+
+
+## Chapter 2. Implementing Airflow DAGs
 
 
 
