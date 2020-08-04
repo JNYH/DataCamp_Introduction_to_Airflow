@@ -1,4 +1,4 @@
-# Introduction_to_Airflow
+# Introduction to Airflow in Python
 This is a memo to document what I have learnt in Apache Airflow, capturing the learning objectives as well as my personal notes. The course is taught by Mike Metzger from DataCamp and includes 4 chapters:
 1. Intro to Airflow
 2. Implementing Airflow DAGs
