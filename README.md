@@ -7,6 +7,6 @@ This is a memo to share what I have learnt in Apache Airflow, capturing the lear
 
 
 ## Solutions and Answers:
-https://towardsdatascience.com/introduction-to-airflow-in-python-67b554f06f0b
+https://medium.com/@jnyh/introduction-to-airflow-in-python-67b554f06f0b
 
 
