@@ -6,7 +6,7 @@ This is a memo to share what I have learnt in Apache Airflow, capturing the lear
 4. Building production pipelines in Airflow
 
 
-## Solutions and Answers:
+## Course Notes, Solutions and Answers:
 https://medium.com/@jnyh/introduction-to-airflow-in-python-67b554f06f0b
 
 
